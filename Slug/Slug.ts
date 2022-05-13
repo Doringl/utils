@@ -6,20 +6,20 @@ const Slug = (text: string): string => {
     üÜ: "u",
     ıİ: "i",
     öÖ: "o",
-  };
+  }
 
   for (let key in trMap) {
     text = text.replace(
       new RegExp("[" + key + "]", "g"),
       trMap[key as keyof typeof trMap]
-    );
+    )
   }
 
   return text
     .replace(/[^-a-zA-Z0-9\s]+/gi, "") // remove non-alphanumeric chars
     .replace(/\s/gi, "-") // convert spaces to dashes
     .replace(/[-]+/gi, "-") // trim repeated dashes
-    .toLowerCase();
-};
+    .toLowerCase()
+}
 
-export default Slug;
+export default Slug
