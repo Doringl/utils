@@ -14,6 +14,7 @@ const IconChars = (text: string): string => {
     } else { 
         icon += text.charAt(1)
     }
+    
     return iconChars
 }
 
