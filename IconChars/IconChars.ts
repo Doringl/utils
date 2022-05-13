@@ -1,5 +1,5 @@
 const IconChars = (text: string): string => { 
-    let iconChars = text.charAt(0)
+    let iconChars = text.charAt(0).toUpperCase()
     let includes:string
 
     if (text.includes(' ')) { 
