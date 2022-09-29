@@ -10,3 +10,4 @@ IconChars('H(h)elloW(w)orld') => 'He'
 ```
 Slug('H(h)ello W(w)orld') => 'hello-world' // also supports Turkish characters.
 ```
+
